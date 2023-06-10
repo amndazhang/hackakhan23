@@ -27,6 +27,9 @@ class Textbook {
   getaccID() {
     return this.accID;
   }
+  getImg() {
+    return this.img;
+  }
   unavail() {
     this.sold = true;
   }
@@ -52,13 +55,19 @@ class Account {
 var textbooks = [
     new Textbook(
     'The Earth and Its Peoples : A Global History: Sixth Edition', 'Bullet',
-    'AP Edition, quality: Fair', '$68', '978-1285436838', '01984roaiufdljksdf'
-    ),
+    'AP Edition, quality: Fair', '$68', '978-1285436838','1' ,'https://www.kws.go.ke/sites/default/files/styles/park_node_style/public/Saiwa.jpg?itok=L9IPW8XY'),
     new Textbook(
     'hello', 'Bullet',
-    'AP Edition, quality: Fair', '$68', '978-1285436838'
+    'AP Edition, quality: Fair', '$68', '978-1285436838', '2','https://www.kws.go.ke/sites/default/files/styles/park_node_style/public/Saiwa.jpg?itok=L9IPW8XY'
+    ),
+    new Textbook(
+    'good morning', 'Bullet',
+    'AP Edition, quality: Fair', '$68', '978-1285436838', '3','https://www.kws.go.ke/sites/default/files/styles/park_node_style/public/Saiwa.jpg?itok=L9IPW8XY'
+    ),
+    new Textbook(
+        'good evening', 'Bullet',
+        'AP Edition, quality: Fair', '$68', '978-1285436838', '4', 'https://www.kws.go.ke/sites/default/files/styles/park_node_style/public/Saiwa.jpg?itok=L9IPW8XY'
     )
-
 ];
 
 
@@ -69,30 +78,26 @@ function search_item() {
 //   let count = 0;
   for(let i = 0; i < textbooks.length; i++) {
     if (!textbooks[i].getName().toLowerCase().includes(input)) {
-        x[0].style.display = 'none';
+        x[i].style.display = 'none';
     } 
-    else {
-      x[1].children[0].innerText = textbooks[i].getName();
-      x[1].children[1].innerText = textbooks[i].getAuth();
-    //   x[1].children[2].innerText = textbooks[i].getDesc();
-      x[1].children[3].innerText = textbooks[i].getCost();
-    // displayImage("img/park.png", 3, 3);
+    if(textbooks[i].getName().toLowerCase().includes(input)){
+      x[i].style.display = 'list-item';
+      document.getElementById("image").src = textbooks[i].getImg();
+      x[i].children[1].innerText = textbooks[i].getName();
+      x[i].children[2].innerText = textbooks[i].getAuth();
+      x[i].children[3].innerText = textbooks[i].getCost();
 
-    //   x[1].children[4].innerText = textbooks[i].getISBN();
-    //   x[1].children[5].innerText = textbooks[i].getaccID();
-      x[1].children[6].innerText = textbooks[i].sold();
-    //   count++;
     }
   }
+//   x[i].style.display = 'none';
 }
 
-// function displayImage(src, width, height) {
-//     var img = document.createElement("img");
-//     img.src = src;
-//     img.width = width;
-//     img.height = height;
-//     document.body.appendChild(img);
-//    }
+function sync(){
+    
+}
+
+
+
 
 // function search_item() {
 //   let input = document.getElementById('searchbar').value
@@ -108,6 +113,6 @@ function search_item() {
 //   }
 // }
 
-// function post_item(){
-  // textbooks.
-// }
+function post_item(){
+  textbooks.push();
+}

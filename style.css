@@ -1,6 +1,13 @@
 html {
     height: 100%;
     width: 100%;
+}
+
+body {
+    background-color: #f7ebdb;
+}
+
+* {
     box-sizing: border-box;
 }
 
@@ -27,18 +34,23 @@ li a:hover {
     background-color: #04AA6D;
 }
 
-.navbar {
-    /* background-color:rgb(180, 180, 180); */
-}
-
 .navli {
     float: right;
+}
+
+.navbar {
+    background-color: #f7ebdb;
 }
 
 #searchbar {
     margin-left: 10%;
     padding: 15px;
     border-radius: 10px;
+}
+
+#input {
+    padding: 2px;
+    float: left;
 }
 
 input[type=text] {
@@ -76,20 +88,47 @@ input[type=text]:focus {
     margin-top: 15px;
     padding: 10px;
     display: block;
+    background-color: white;
 }
 
 #home {
     float: left;
 }
 
-/* .item-page {
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 50px;
-} */
+.item-page {
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-top: 40px;
+}
 
-/* .box {
+.item-page img {
+    width: 400px;
+}
+
+.box-one {
     float: left;
-    width: 33.33%;
-    padding: 50px;
-} */
+    width: 38%;
+    height: 100px;
+}
+
+.box-two {
+    float: left;
+    width: 50%;
+    height: 500px;
+}
+
+.box-three {
+    float: left;
+    width: 50%;
+    height: 200px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer {
+    text-align: center;
+}
