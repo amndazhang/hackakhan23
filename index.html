@@ -4,53 +4,99 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body onload="prep()">
     <!-- nav bar -->
     <div class="navbar">
         <ul>
             <li class="navli" id="home"><a href="index.html">ShareShelf</a></li>
             <li class="navli"><a href="account.html">Account</a></li>
-            <li class="navli"><a href="post.html">Post</a></li>
-            <input id="searchbar" onkeyup="search_item()" type="text" name="search" placeholder="Search items..">
+            <li class="navli" style="font-size:20px; font-weight: bold;"><a href="post.html">+</a></li>
+            <input id="searchbar" onkeyup="search_item()" type="text" name="search" placeholder="Search books..">
         </ul>
     </div>
 
-    <!-- <ol id='list'>
-        <li class="item">Cat</li>
-        <li class="item">Dog</li>
-        <li class="item">Elephant</li>
-        <li class="item">Fish</li>
-        <li class="item">Gorilla</li>
-        <li class="item">Monkey</li>
-        <li class="item">Turtle</li>
-        <li class="item">Whale</li>
-        <li class="item">Aligator</li>
-        <li class="item">Donkey</li>
-        <li class="item">Horse</li>
-    </ol> -->
-
     <div class="container">
-        <ul id='list'>
-            <li class="item">
-                <!-- <img src="img/park.png"> -->
-                <img src="https://www.kws.go.ke/sites/default/files/styles/park_node_style/public/Saiwa.jpg?itok=L9IPW8XY">
-                <h1>ITEM 1</h1>
-                <h1>ITEM 1</h1>
-                <h1>ITEM 1</h1>
-                <h1>ITEM 1</h1>
-                <h1>ITEM 1</h1>
-                <h1>ITEM 1</h1>
-                <!-- <p>$100</p> -->
-   
-            </li>
-            <li class="item">
-                <h1>ITEM 1</h1>
-                <h1>ITEM 1</h1>
-                <h1>ITEM 1</h1>
-                <h1>ITEM 1</h1>
-                <h1>ITEM 1</h1>
-                <h1>ITEM 1</h1>
-            </li>
+        <ul>
+            <a href="item1.html">
+                <li class="item">
+                    <img src="https://cdnagesdb.com/images/booksimages/D6FDE14D981339F5D8736717C08D3DD3.webp" id="image">
+                    <h1 id="item1">World History Volume 2: From 1400</h1>
+                    <h1>Kordas</h1>
+                    <h1>$40</h1>
+                </li>
+            </a>
+            <a href="item2.html">
+                <li class="item">
+                    <img src="https://m.media-amazon.com/images/I/516mKQySQWL._SX373_BO1,204,203,200_.jpg" id="image">
+                    <h1 id="item2">The Earth and Its Peoples : A Global History: Sixth Edition</h1>
+                    <h1>Bullet</h1>
+                    <h1>$68</h1>
+                </li>
+            </a>
+            <a href="item3.html">
+                <li class="item">
+                    <img src="https://m.media-amazon.com/images/I/41HlPvXdNML._SX399_BO1,204,203,200_.jpg" id="image">
+                    <h1 id="item3">Calculus 9th ed.</h1>
+                    <h1>Larson, Edward</h1>
+                    <h1>$347.95</h1>
+                </li>
+            </a>
+            <a href="item4.html">
+                <li class="item">
+                    <img src="https://isbncoverdb.com/images/book-cover-biology-of-flowering-plants.webp" id="image">
+                    <h1 id="item2">Biology Of Flowering Plants</h1>
+                    <h1>Skene</h1>
+                    <h1>$56.41</h1>
+                </li>
+            </a>
+            <a href="item4.html">
+                <li class="item">
+                    <img src="https://isbncoverdb.com/images/book-cover-biology-of-flowering-plants.webp" id="image">
+                    <h1 id="item2">Biology Of Flowering Plants</h1>
+                    <h1>Skene</h1>
+                    <h1>$56.41</h1>
+                </li>
+            </a>
+            <a href="item4.html">
+                <li class="item">
+                    <img src="https://isbncoverdb.com/images/book-cover-biology-of-flowering-plants.webp" id="image">
+                    <h1 id="item2">Biology Of Flowering Plants</h1>
+                    <h1>Skene</h1>
+                    <h1>$56.41</h1>
+                </li>
+            </a>
+            <a href="item4.html">
+                <li class="item">
+                    <img src="https://isbncoverdb.com/images/book-cover-biology-of-flowering-plants.webp" id="image">
+                    <h1 id="item2">Biology Of Flowering Plants</h1>
+                    <h1>Skene</h1>
+                    <h1>$56.41</h1>
+                </li>
+            </a>
+            <!-- <a href>
+                <li class="item"><a href="item.html">
+                        <img src="https://m.media-amazon.com/images/I/51Roaw-hv-L._AC_UF1000,1000_QL80_.jpg" id="image">
+                        <h1 id = "item5">ITEM 1</h1>
+                        <h1>ITEM 1</h1>
+                        <h1>ITEM 1</h1>
+                </li>
+            </a>
+            <a href>
+                <li class="item"><a href="item.html">
+                        <img src="https://m.media-amazon.com/images/I/51Roaw-hv-L._AC_UF1000,1000_QL80_.jpg" id="image">
+                        <h1 id = "item5">ITEM 1</h1>
+                        <h1>ITEM 1</h1>
+                        <h1>ITEM 1</h1>
+                </li>
+            </a>
+            <a href>
+                <li class="item"><a href="item.html">
+                        <img src="https://m.media-amazon.com/images/I/51Roaw-hv-L._AC_UF1000,1000_QL80_.jpg" id="image">
+                        <h1 id = "item5">ITEM 1</h1>
+                        <h1>ITEM 1</h1>
+                        <h1>ITEM 1</h1>
+                </li>
+            </a> -->
             <!-- <li class="item">
                 <img src="img/park.png">
                 <h1>ITEM 3</h1>
@@ -65,6 +111,15 @@
             </li> -->
         </ul>
     </div>
+    </div>
+
+    <div class="footer">
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>© 2023 ShareShelf</p>
+        <br>
     </div>
     <script src="script.js"></script>
 </body>
