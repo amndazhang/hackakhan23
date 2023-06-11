@@ -6,7 +6,9 @@ class Textbook {
     this.cost = cost;
     this.isbn = isbn;
     this.username = username;
+    this.username = username;
     this.img = img;
+    // this.sold = false;
     // this.sold = false;
   }
   getName() {
@@ -30,17 +32,29 @@ class Textbook {
   getImg() {
     return this.img;
   }
+  getUsername() {
+    return this.username;
+  }
+  getImg() {
+    return this.img;
+  }
   sold() {
     this.sold = true;
   }
 }
 
+
 class Account {
   constructor(name, username, location, contact, postings) {
     this.name = name;
     this.username = username;
+    this.username = username;
     this.location = location;
     this.contact = contact;
+    this.postings = postings;
+  }
+  getContact() {
+    return this.contact;
     this.postings = postings;
   }
   getContact() {
@@ -49,9 +63,16 @@ class Account {
   getPostings() {
     return this.postings;
   }
+  getPostings() {
+    return this.postings;
+  }
   addPosting(book) {
     this.postings.push(book);
   }
+  addPosting(book) {
+    this.postings.push(book);
+  }
+  // addStar() {}
   // addStar() {}
 }
 
@@ -121,9 +142,14 @@ function search_item() {
       x[i].children[3].innerText = textbooks[i].getCost();
     }
     console.log(textbooks);
+    console.log(textbooks);
   }
   //   x[i].style.display = 'none';
+  //   x[i].style.display = 'none';
 }
+
+// function sync() {}
+
 
 // function sync() {}
 
