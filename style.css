@@ -1,14 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap"');
+
+#home {
+    float: left;
+    font-family: "Andale Mono", monospace;
+    color: #FCBCB8;
+}
+
 html {
     height: 100%;
     width: 100%;
+    font-family: "Andale Mono", monospace;
 }
 
 body {
     background-color: #f7ebdb;
+    margin: 0px;
 }
 
 * {
     box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(66, 53, 41);
+    font-size: 25px; 
+}
+
+p {
+    color: #2F4858;
+}
+
+#mailto {
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid #FCBCB8;
+    padding: 10px;
+    border-radius: 8px;
+    float: right;
+    margin-right: 100px;
 }
 
 ul {
@@ -18,45 +47,53 @@ ul {
     overflow: hidden;
 }
 
+a:visited {
+    color: #2F4858;
+}
+
 li a {
     display: inline-block;
-    color: black;
+    /* color: black; */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: rgb(221, 221, 221);
+    color: #fbe6e5;
 }
 
 .active {
-    background-color: #04AA6D;
+    background-color: #FCBCB8;
+}
+
+.navbar {
+    background-color: #fcc8b8;
 }
 
 .navli {
     float: right;
 }
 
-.navbar {
-    background-color: #f7ebdb;
-}
-
 #searchbar {
     margin-left: 10%;
+    margin-top: 8px;
     padding: 15px;
     border-radius: 10px;
+    height: 30px;
 }
 
 #input {
     padding: 2px;
-    float: left;
 }
 
 input[type=text] {
     width: 70%;
     -webkit-transition: width 0.15s ease-in-out;
     transition: width 0.15s ease-in-out;
+    margin-left: 3%;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 /* When the input field gets focus,
@@ -76,39 +113,34 @@ input[type=text]:focus {
     padding: 10px;
     width: 250px;
     height: 250px;
-    justify-content: center;
 }
 
 .item {
-    border: solid black 2px;
+    border: solid #FCBCB8 2px;
     justify-content: center;
+    text-align: center;
+    width: 330px;
+    height: 500px;
     margin-bottom: 50px;
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 15px;
     padding: 10px;
-    display: block;
+    display: inline-block;
     background-color: white;
+    text-decoration: none;
+    border-radius: 8px;
 }
 
-#home {
-    float: left;
-}
-
-.item-page {
+#item-page {
     padding-left: 250px;
     padding-right: 250px;
     margin-top: 40px;
 }
 
-.item-page img {
+#item-page img {
     width: 400px;
-}
-
-.box-one {
-    float: left;
-    width: 38%;
-    height: 100px;
+    height: 500px;
 }
 
 .box-two {
@@ -131,4 +163,14 @@ input[type=text]:focus {
 
 .footer {
     text-align: center;
+}
+
+#account-page {
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+#profile img {
+    padding-top: 50px;
+    width: 200px;
 }

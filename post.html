@@ -11,32 +11,63 @@
             <li class="navli" id="home"><a href="index.html">ShareShelf</a></li>
             <li class="navli"><a href="account.html">Account</a></li>
             <li class="navli" style="font-size:20px; font-weight: bold;"><a href="post.html">+</a></li>
-            <input id="searchbar" onkeyup="search_item()" type="text" name="search" placeholder="Search items..">
         </ul>
     </div>
-    <p>Name</p>
-    <input id="input" type="text" placeholder="Full name of the textbook">
-    </br>
-    <p>Author</p>
-    <input id="input" type="text" placeholder="List authors of the textbook">
-    </br>
-    <p>ISBN</p>
-    <input id="input" type="text" style="width:20px;" placeholder="ISBN-13">
-    </br>
-    <p>Cost</p>
-    <input id="input" type="text" placeholder="$ USD">
-    </br>
-    <p>Description</p>
-    <input id="input" type="text"  style="width:20px;" placeholder="">
-    </br>
-    <p>Image Link</p>
-    <input id="input" type="text" placeholder="Full name of the textbook">
-    </br>
-    </br>
-    </br>
-    <input type="submit" value="Submit">
+    <!-- <form name = ""> -->
+    <p>Name
+        <input id="nameInput"  name="a" type="text" placeholder="Full name of the textbook">
+    </p>
 
-    <div class="footer">
+    </br>
+
+    <p>Author
+        <input id="authorInput" type="text" placeholder="List authors of the textbook">
+    </p>
+
+    </br>
+
+    <p>Description
+        <input id="descriptionInput" type="text" style="height:20px;" placeholder="Subject, condition, volume, edition, language, pages, publisher">
+    </p>
+
+    <p>Cost 
+        <input id="costInput" type="text" style="width:100px;" placeholder="$ USD">
+    </p>
+
+    <!-- <div style = "float:left"> -->
+    <p>ISBN
+        <input id="isbnInput" type="text" style="width:100px;" placeholder="ISBN-13">
+    </p>
+
+    <p>Account ID
+        <input id="accIdInput" type="text" style="width:100px;" placeholder="account ID">
+    </p>
+    <!-- </div> -->
+
+    <!-- <div style = "float:right"> -->
+   
+    <!-- </div> -->
+
+    </br>
+
+    <p>Image Link
+        <input id="imageInput" type="text" placeholder="Photo of textbook">
+    </p>
+
+    </br>
+
+    <!-- <a href="submitted.html"> -->
+        <button onclick = "post_item()">hhihi</button>
+    <!-- </a> -->
+    
+
+    <!-- <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+        </form> -->
+
+
+    <div id="footer">
         <br>
         <br>
         <br>

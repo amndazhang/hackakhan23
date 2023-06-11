@@ -3,30 +3,29 @@
 <head>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+<script src="script.js"></script>
 
-<body>
+<body onload="load_item()">
   <!-- nav bar -->
   <div class="navbar">
     <ul>
       <li class="navli" id="home"><a href="index.html">ShareShelf</a></li>
       <li class="navli"><a href="account.html">Account</a></li>
       <li class="navli" style="font-size:20px; font-weight: bold;"><a href="post.html">+</a></li>
-      <input id="searchbar" onkeyup="search_item()" type="text" name="search" placeholder="Search items..">
     </ul>
   </div>
 
-  <div class="item-page">
+  <div id="item-page">
     <div class="clearfix">
-      <div class="box-one">
-        <button type="button"><a href="mailto:hello@gmail.com">Contact</a></button>
-      </div>
-      <div class="box-one">
+        <a href="mailto:hello@gmail.com" id="mailto">Contact</a>
+    </br>
+      <!-- <div class="box-one">
         <p>Posted 2023-06-10 10:56</p>
-      </div>
+      </div> -->
     </div>
 
-    <h1>World History Volume 2: From 1400</h1>
-    <p><i>Ann Kordas, Ryan J. Lynch, Brooke Nelson, Julie Tatlock et al.</i></p>
+    <h1 id="bookTitle">World History Volume 2: From 1400</h1>
+    <p><i>Ann Kordas et al.</i></p>
 
     <div class="clearfix">
       <div class="box-two">
@@ -78,9 +77,8 @@
       <br>
     </div>
 
-    <a href="">
+    <!-- <a href=""> -->
 
-      <script src="script.js"></script>
 </body>
 
 </html>
